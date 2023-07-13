@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#673AB7"
+    android:backgroundTint="#FFC107"
+    android:backgroundTintMode="add"
     tools:context=".Encuestas">
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="640dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,7 +30,8 @@
                 android:layout_height="wrap_content"
                 android:text="¿Con que frecuencia acudes al cine?"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -34,25 +42,29 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="1 vez al mes"
+                    android:textColor="#000000"
                     android:textSize="14sp" />
 
                 <RadioButton
                     android:id="@+id/op1.2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1 vez cada semana" />
+                    android:text="1 vez cada semana"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op1.3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mas de una semana" />
+                    android:text="Mas de una semana"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op1.4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Casi nunca" />
+                    android:text="Casi nunca"
+                    android:textColor="#000000" />
             </RadioGroup>
 
             <TextView
@@ -61,7 +73,8 @@
                 android:layout_height="wrap_content"
                 android:text="Califique la calidad de audio de las salas"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -71,25 +84,29 @@
                     android:id="@+id/op2.1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op2.2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Regular" />
+                    android:text="Regular"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op2.3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op2.4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Excelente" />
+                    android:text="Excelente"
+                    android:textColor="#000000" />
             </RadioGroup>
 
             <TextView
@@ -98,7 +115,8 @@
                 android:layout_height="wrap_content"
                 android:text="Califique la atencióndel personal antes, durante y despues de la función"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -108,25 +126,29 @@
                     android:id="@+id/op3.1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op3.2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Regular" />
+                    android:text="Regular"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op3.3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op3.4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Excelente" />
+                    android:text="Excelente"
+                    android:textColor="#000000" />
             </RadioGroup>
 
             <TextView
@@ -135,7 +157,8 @@
                 android:layout_height="wrap_content"
                 android:text="Califique el nivel de higiene en baños y salas"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -145,25 +168,29 @@
                     android:id="@+id/op4.1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Malo" />
+                    android:text="Malo"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op4.2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Regular" />
+                    android:text="Regular"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op4.3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bueno" />
+                    android:text="Bueno"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op4.4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Excelente" />
+                    android:text="Excelente"
+                    android:textColor="#000000" />
             </RadioGroup>
 
             <TextView
@@ -172,7 +199,8 @@
                 android:layout_height="wrap_content"
                 android:text="¿Que tipo de salas prefieres?"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -182,28 +210,43 @@
                     android:id="@+id/op5.1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3D" />
+                    android:text="3D"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op5.2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sala normal" />
+                    android:text="Sala normal"
+                    android:textColor="#000000" />
 
                 <RadioButton
                     android:id="@+id/op5.3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Macro XE" />
+                    android:text="Macro XE"
+                    android:textColor="#000000" />
             </RadioGroup>
-
-            <Button
-                android:id="@+id/enviar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Enviar Respuestas" />
 
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#8F4D4D"
+        android:text="Enviar Respuestas"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.058" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
