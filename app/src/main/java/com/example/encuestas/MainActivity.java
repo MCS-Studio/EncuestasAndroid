@@ -16,4 +16,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Encuestas.class);
         startActivity(intent);
     }
+
+    public void resultados(View view){
+        Intent intent = new Intent(this, Resultados.class);
+        startActivity(intent);
+    }
 }
