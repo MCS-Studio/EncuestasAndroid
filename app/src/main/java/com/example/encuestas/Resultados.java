@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class Resultados extends AppCompatActivity {
     private TextView ra1,rb1,rc1,rd1,ra2,rb2,rc2,rd2,ra3, rb3, rc3, rd3,ra4, rb4, rc4, rd4,ra5, rb5, rc5;
@@ -229,10 +233,24 @@ public class Resultados extends AppCompatActivity {
         cursor.close();
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menubar, menu);
+        return true;
 
-    public void encuestas(View view){
-        Intent intent = new Intent(this,Encuestas.class);
-        startActivity(intent);
+        //Genera el menubar de la aplicacion
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.Back) {
+            //Toast.makeText(this, "Regresando a inicio", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+
+        //Detecta cuando es precionado el objeto Back y regresa al menu principal de la aplicacion
     }
 
     public void inicio(View view){
