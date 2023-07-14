@@ -42,25 +42,6 @@ public class Encuestas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encuestas);
-        op11 = findViewById(R.id.op1_1);
-        op12 = findViewById(R.id.op1_2);
-        op13 = findViewById(R.id.op1_3);
-        op14 = findViewById(R.id.op1_4);
-        op21 = findViewById(R.id.op2_1);
-        op22 = findViewById(R.id.op2_2);
-        op23 = findViewById(R.id.op2_3);
-        op24 = findViewById(R.id.op2_4);
-        op31 = findViewById(R.id.op3_1);
-        op32 = findViewById(R.id.op3_2);
-        op33 = findViewById(R.id.op3_3);
-        op34 = findViewById(R.id.op3_4);
-        op41 = findViewById(R.id.op4_1);
-        op42 = findViewById(R.id.op4_2);
-        op43 = findViewById(R.id.op4_3);
-        op44 = findViewById(R.id.op4_4);
-        op51 = findViewById(R.id.op5_1);
-        op52 = findViewById(R.id.op5_2);
-        op53 = findViewById(R.id.op5_3);
         radioGroup1 = findViewById(R.id.r1);
         radioGroup2 = findViewById(R.id.r2);
         radioGroup3 = findViewById(R.id.r3);
@@ -75,15 +56,15 @@ public class Encuestas extends AppCompatActivity {
         boolean isAnyOptionSelected = false;
 
         if (radioGroup1.getCheckedRadioButtonId() == -1) {
-            Toast.makeText(this, "Por favor, selecciona una opción en el grupo 1", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor, selecciona una opción en la pregunta 1", Toast.LENGTH_SHORT).show();
         } else if (radioGroup2.getCheckedRadioButtonId() == -1) {
-            Toast.makeText(this, "Por favor, selecciona una opción en el grupo 2", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor, selecciona una opción en la pregunta 2", Toast.LENGTH_SHORT).show();
         } else if (radioGroup3.getCheckedRadioButtonId() == -1) {
-            Toast.makeText(this, "Por favor, selecciona una opción en el grupo 3", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor, selecciona una opción en la pregunta 3", Toast.LENGTH_SHORT).show();
         } else if (radioGroup4.getCheckedRadioButtonId() == -1) {
-            Toast.makeText(this, "Por favor, selecciona una opción en el grupo 4", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor, selecciona una opción en la pregunta 4", Toast.LENGTH_SHORT).show();
         } else if (radioGroup5.getCheckedRadioButtonId() == -1) {
-            Toast.makeText(this, "Por favor, selecciona una opción en el grupo 5", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor, selecciona una opción en la pregunta 5", Toast.LENGTH_SHORT).show();
         } else {
             // Se seleccionó al menos un RadioButton en cada grupo
             isAnyOptionSelected = true;
@@ -190,11 +171,16 @@ public class Encuestas extends AppCompatActivity {
                     db.execSQL(updateQuery);
                 }
             }
+            radioGroup1.clearCheck();
+            radioGroup2.clearCheck();
+            radioGroup3.clearCheck();
+            radioGroup4.clearCheck();
+            radioGroup5.clearCheck();
+            Toast.makeText(this, "Respuestas registradas", Toast.LENGTH_SHORT).show();
 
 
             // Repite el mismo proceso para los otros grupos de opciones
             // Actualiza las columnas y filas correspondientes según las opciones seleccionadas
-            finish();
         }
     }
 }
