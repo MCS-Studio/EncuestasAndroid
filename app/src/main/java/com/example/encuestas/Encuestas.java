@@ -1,10 +1,13 @@
 package com.example.encuestas;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 import android.content.ContentValues;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 import android.view.View;
 import android.widget.RadioButton;
@@ -16,7 +19,25 @@ public class Encuestas extends AppCompatActivity {
     private RadioButton op11, op12, op13, op14, op21, op22, op23, op24, op31, op32, op33, op34, op41, op42, op43, op44, op51, op52, op53;
     private RadioGroup radioGroup1, radioGroup2, radioGroup3, radioGroup4, radioGroup5;
     private SQLiteDatabase db;
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menubar, menu);
+        return true;
 
+        //Genera el menubar de la aplicacion
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.Back) {
+            //Toast.makeText(this, "Regresando a inicio", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+
+        //Detecta cuando es precionado el objeto Back y regresa al menu principal de la aplicacion
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
