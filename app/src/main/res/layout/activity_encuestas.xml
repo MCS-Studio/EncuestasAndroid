@@ -34,11 +34,12 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/r1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/op1.1"
+                    android:id="@+id/op1_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="1 vez al mes"
@@ -46,21 +47,21 @@
                     android:textSize="14sp" />
 
                 <RadioButton
-                    android:id="@+id/op1.2"
+                    android:id="@+id/op1_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="1 vez cada semana"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op1.3"
+                    android:id="@+id/op1_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Mas de una semana"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op1.4"
+                    android:id="@+id/op1_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Casi nunca"
@@ -77,32 +78,33 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/r2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/op2.1"
+                    android:id="@+id/op2_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Malo"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op2.2"
+                    android:id="@+id/op2_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Regular"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op2.3"
+                    android:id="@+id/op2_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bueno"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op2.4"
+                    android:id="@+id/op2_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Excelente"
@@ -119,32 +121,33 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/r3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/op3.1"
+                    android:id="@+id/op3_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Malo"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op3.2"
+                    android:id="@+id/op3_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Regular"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op3.3"
+                    android:id="@+id/op3_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bueno"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op3.4"
+                    android:id="@+id/op3_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Excelente"
@@ -161,32 +164,33 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/r4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/op4.1"
+                    android:id="@+id/op4_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Malo"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op4.2"
+                    android:id="@+id/op4_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Regular"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op4.3"
+                    android:id="@+id/op4_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bueno"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op4.4"
+                    android:id="@+id/op4_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Excelente"
@@ -203,25 +207,26 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/r5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <RadioButton
-                    android:id="@+id/op5.1"
+                    android:id="@+id/op5_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="3D"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op5.2"
+                    android:id="@+id/op5_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sala normal"
                     android:textColor="#000000" />
 
                 <RadioButton
-                    android:id="@+id/op5.3"
+                    android:id="@+id/op5_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Macro XE"
@@ -239,6 +244,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="#8F4D4D"
+        android:onClick="prueba"
         android:text="Enviar Respuestas"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
