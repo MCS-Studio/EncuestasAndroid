@@ -79,35 +79,101 @@ public class Encuestas extends AppCompatActivity {
             int radioButtonId5 = radioGroup5.getCheckedRadioButtonId();
 
             if (radioButtonId1 != -1) {
-                // Se seleccionó un RadioButton en el grupo 1
                 if (radioButtonId1 == R.id.op1_1) {
-                    // Opción 1 seleccionada en el grupo 1
-                    ContentValues values = new ContentValues();
-                    values.put("RespuestaA", "RespuestaA + 1");
-                    db.update("articulos", values, "codigo = ?", new String[]{"1"});
+                    // PREGUNTA 1 RESPUESTA A
+                    String updateQuery = "UPDATE articulos SET RespuestaA = RespuestaA + 1 WHERE codigo = 1";
+                    db.execSQL(updateQuery);
                 } else if (radioButtonId1 == R.id.op1_2) {
-                    // Opción 2 seleccionada en el grupo 1
-                    updateTable(1, "RespuestaB", +1);
+                    // PREGUNTA 1 RESPUESTA B
+                    String updateQuery = "UPDATE articulos SET RespuestaB = RespuestaB + 1 WHERE codigo = 1";
+                    db.execSQL(updateQuery);
                 } else if (radioButtonId1 == R.id.op1_3) {
-                    // Opción 3 seleccionada en el grupo 1
-                    updateTable(1, "RespuestaC", +1);
+                    // PREGUNTA 1 RESPUESTA C
+                    String updateQuery = "UPDATE articulos SET RespuestaC = RespuestaC + 1 WHERE codigo = 1";
+                    db.execSQL(updateQuery);
                 } else if (radioButtonId1 == R.id.op1_4) {
-                    // Opción 4 seleccionada en el grupo 1
-                    updateTable(1, "RespuestaD", +1);
+                    // PREGUNTA 1 RESPUESTA D
+                    String updateQuery = "UPDATE articulos SET RespuestaD = RespuestaD + 1 WHERE codigo = 1";
+                    db.execSQL(updateQuery);
                 }
             }
+            if (radioButtonId2 != -1) {
+                if (radioButtonId2 == R.id.op2_1) {
+                    // PREGUNTA 1 RESPUESTA A
+                    String updateQuery = "UPDATE articulos SET RespuestaA = RespuestaA + 1 WHERE codigo = 2";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId2 == R.id.op2_2) {
+                    // PREGUNTA 1 RESPUESTA B
+                    String updateQuery = "UPDATE articulos SET RespuestaB = RespuestaB + 1 WHERE codigo = 2";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId2 == R.id.op2_3) {
+                    // PREGUNTA 1 RESPUESTA C
+                    String updateQuery = "UPDATE articulos SET RespuestaC = RespuestaC + 1 WHERE codigo = 2";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId2 == R.id.op2_4) {
+                    // PREGUNTA 1 RESPUESTA D
+                    String updateQuery = "UPDATE articulos SET RespuestaD = RespuestaD + 1 WHERE codigo = 2";
+                    db.execSQL(updateQuery);
+                }
+            }
+            if (radioButtonId3 != -1) {
+                if (radioButtonId3 == R.id.op3_1) {
+                    // PREGUNTA 1 RESPUESTA A
+                    String updateQuery = "UPDATE articulos SET RespuestaA = RespuestaA + 1 WHERE codigo = 3";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId3 == R.id.op3_2) {
+                    // PREGUNTA 1 RESPUESTA B
+                    String updateQuery = "UPDATE articulos SET RespuestaB = RespuestaB + 1 WHERE codigo = 3";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId3 == R.id.op3_3) {
+                    // PREGUNTA 1 RESPUESTA C
+                    String updateQuery = "UPDATE articulos SET RespuestaC = RespuestaC + 1 WHERE codigo = 3";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId3 == R.id.op3_4) {
+                    // PREGUNTA 1 RESPUESTA D
+                    String updateQuery = "UPDATE articulos SET RespuestaD = RespuestaD + 1 WHERE codigo = 3";
+                    db.execSQL(updateQuery);
+                }
+            }
+            if (radioButtonId4 != -1) {
+                if (radioButtonId4 == R.id.op4_1) {
+                    // PREGUNTA 1 RESPUESTA A
+                    String updateQuery = "UPDATE articulos SET RespuestaA = RespuestaA + 1 WHERE codigo = 4";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId4 == R.id.op4_2) {
+                    // PREGUNTA 1 RESPUESTA B
+                    String updateQuery = "UPDATE articulos SET RespuestaB = RespuestaB + 1 WHERE codigo = 4";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId4 == R.id.op4_3) {
+                    // PREGUNTA 1 RESPUESTA C
+                    String updateQuery = "UPDATE articulos SET RespuestaC = RespuestaC + 1 WHERE codigo = 4";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId4 == R.id.op4_4) {
+                    // PREGUNTA 1 RESPUESTA D
+                    String updateQuery = "UPDATE articulos SET RespuestaD = RespuestaD + 1 WHERE codigo = 4";
+                    db.execSQL(updateQuery);
+                }
+            }
+            if (radioButtonId5 != -1) {
+                if (radioButtonId5 == R.id.op5_1) {
+                    // PREGUNTA 1 RESPUESTA A
+                    String updateQuery = "UPDATE articulos SET RespuestaA = RespuestaA + 1 WHERE codigo = 5";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId5 == R.id.op5_2) {
+                    // PREGUNTA 1 RESPUESTA B
+                    String updateQuery = "UPDATE articulos SET RespuestaB = RespuestaB + 1 WHERE codigo = 5";
+                    db.execSQL(updateQuery);
+                } else if (radioButtonId5 == R.id.op5_3) {
+                    // PREGUNTA 1 RESPUESTA C
+                    String updateQuery = "UPDATE articulos SET RespuestaC = RespuestaC + 1 WHERE codigo = 5";
+                    db.execSQL(updateQuery);
+                }
+            }
+
 
             // Repite el mismo proceso para los otros grupos de opciones
             // Actualiza las columnas y filas correspondientes según las opciones seleccionadas
             finish();
         }
     }
-
-    private void updateTable(int codigo, String columna, int valor) {
-        ContentValues values = new ContentValues();
-        values.put(columna, valor);
-        db.update("articulos", values, "codigo = ?", new String[]{String.valueOf(codigo)});
-    }
-
-    // ...
 }

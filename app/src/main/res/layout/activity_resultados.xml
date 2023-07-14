@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +7,8 @@
     android:background="#673AB7"
     android:backgroundTint="#FFC107"
     android:backgroundTintMode="add"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_resultados_scene"
     tools:context=".Resultados">
 
     <TextView
@@ -19,10 +21,65 @@
         android:text="¿Con que frecuencia acudes al cine?"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A)" />
+
+        <TextView
+            android:id="@+id/RA1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="B)" />
+
+        <TextView
+            android:id="@+id/RB1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C)" />
+
+        <TextView
+            android:id="@+id/RC1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/d1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D)" />
+
+        <TextView
+            android:id="@+id/RD1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/Pregunta2"
@@ -34,10 +91,81 @@
         android:text="Califique la calidad de audio de las salas"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Pregunta1" />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A)" />
+
+        <TextView
+            android:id="@+id/RA2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="B)" />
+
+        <TextView
+            android:id="@+id/RB2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C)" />
+
+        <TextView
+            android:id="@+id/RC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/d2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D)" />
+
+        <TextView
+            android:id="@+id/RD2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/Pregunta3"
@@ -49,10 +177,80 @@
         android:text="Califique la atencióndel personal antes, durante y despues de la función"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Pregunta2" />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A)" />
+
+        <TextView
+            android:id="@+id/RA3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="B)" />
+
+        <TextView
+            android:id="@+id/RB3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C)" />
+
+        <TextView
+            android:id="@+id/RC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/d3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D)" />
+
+        <TextView
+            android:id="@+id/RD3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/Pregunta4"
@@ -64,10 +262,81 @@
         android:text="Califique el nivel de higiene en baños y salas"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Pregunta3" />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A)" />
+
+        <TextView
+            android:id="@+id/RA4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="B)" />
+
+        <TextView
+            android:id="@+id/RB4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/c4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C)" />
+
+        <TextView
+            android:id="@+id/RC4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/d4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D)" />
+
+        <TextView
+            android:id="@+id/RD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/Pregunta5"
@@ -79,10 +348,53 @@
         android:text="¿Que tipo de salas prefieres?"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Pregunta4" />
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/a5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A)" />
+
+        <TextView
+            android:id="@+id/RA5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="B)" />
+
+        <TextView
+            android:id="@+id/RB5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/c5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C)" />
+
+        <TextView
+            android:id="@+id/RC5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/Encuestas"
@@ -95,11 +407,7 @@
         android:onClick="encuestas"
         android:text="encuestas"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Pregunta5" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/inicio"
@@ -111,11 +419,6 @@
         android:onClick="inicio"
         android:text="Inicio"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Encuestas"
-        app:layout_constraintVertical_bias="0.149" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="20sp" />
+
+</LinearLayout>
